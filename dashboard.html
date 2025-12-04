@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - Travel Saathi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="results.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>🧳 Travel Saathi</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">My Bookings</a></li>
+                <li><a href="#">Price Alerts</a></li>
+                <li><a href="#" class="btn-logout">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="filter-section">
+                <h3>Filters</h3>
+                
+                <div class="filter-group">
+                    <h4>Travel Mode</h4>
+                    <label><input type="checkbox" value="flight" checked> Flights</label>
+                    <label><input type="checkbox" value="train" checked> Trains</label>
+                    <label><input type="checkbox" value="bus" checked> Buses</label>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Price Range</h4>
+                    <input type="range" id="priceRange" min="0" max="10000" value="10000">
+                    <span id="priceValue">₹10,000</span>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Departure Time</h4>
+                    <label><input type="checkbox" value="morning"> Morning (6AM-12PM)</label>
+                    <label><input type="checkbox" value="afternoon"> Afternoon (12PM-6PM)</label>
+                    <label><input type="checkbox" value="evening"> Evening (6PM-12AM)</label>
+                    <label><input type="checkbox" value="night"> Night (12AM-6AM)</label>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Airlines/Operators</h4>
+                    <label><input type="checkbox" value="indigo"> IndiGo</label>
+                    <label><input type="checkbox" value="spicejet"> SpiceJet</label>
+                    <label><input type="checkbox" value="airindia"> Air India</label>
+                    <label><input type="checkbox" value="irctc"> IRCTC</label>
+                    <label><input type="checkbox" value="redbus"> RedBus</label>
+                </div>
+
+                <button class="btn-apply-filters">Apply Filters</button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="search-header">
+                <div id="routeInfo">
+                    <h2>Delhi → Mumbai</h2>
+                    <p>December 5, 2025</p>
+                </div>
+                <button class="btn-modify">Modify Search</button>
+            </div>
+
+            <div class="tabs">
+                <button class="tab active" data-tab="all">All</button>
+                <button class="tab" data-tab="flight">Flights</button>
+                <button class="tab" data-tab="train">Trains</button>
+                <button class="tab" data-tab="bus">Buses</button>
+            </div>
+
+            <div class="results-container" id="resultsContainer">
+                <div class="loading">Searching for best deals...</div>
+            </div>
+        </main>
+    </div>
+
+    <script src="results.js"></script>
+</body>
+</html>
