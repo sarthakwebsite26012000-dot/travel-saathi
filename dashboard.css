@@ -1,0 +1,46 @@
+/* Dashboard specific styles - extends styles.css and results.css */
+
+.dashboard-container {
+    min-height: calc(100vh - 80px);
+    padding: 20px 0;
+}
+
+/* Additional dashboard specific styling */
+.sidebar {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.filter-section {
+    padding-top: 1rem;
+}
+
+#priceValue {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.search-header {
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px 10px 0 0;
+    color: white;
+    margin-bottom: 0;
+}
+
+.search-header h2 {
+    color: white;
+}
+
+.search-header p {
+    color: rgba(255,255,255,0.9);
+}
+
+.btn-modify {
+    background: white;
+    color: var(--secondary-color);
+}
+
+.btn-modify:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
