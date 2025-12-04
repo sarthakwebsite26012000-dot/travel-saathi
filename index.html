@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Saathi - Your Indian Travel Companion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>🧳 Travel Saathi</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+                <li><a href="dashboard.html" class="btn-primary">Get Started</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Find the Cheapest Travel Options Across India</h1>
+            <p>Compare flights, trains, and buses from MakeMyTrip, IRCTC, RedBus & more - all in one place!</p>
+            <div class="search-box">
+                <input type="text" placeholder="From (e.g., Delhi)" id="from">
+                <input type="text" placeholder="To (e.g., Mumbai)" id="to">
+                <input type="date" id="date">
+                <button class="btn-search" onclick="searchDeals()">Search Deals</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Why Choose Travel Saathi?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="icon">✈️</span>
+                    <h3>Multi-Platform Search</h3>
+                    <p>Compare prices across MakeMyTrip, Goibibo, Cleartrip, IRCTC, and RedBus</p>
+                </div>
+                <div class="feature-card">
+                    <span class="icon">💰</span>
+                    <h3>Best Price Guarantee</h3>
+                    <p>Real-time price tracking to ensure you get the lowest fares</p>
+                </div>
+                <div class="feature-card">
+                    <span class="icon">🔔</span>
+                    <h3>Price Alerts</h3>
+                    <p>Get notified when prices drop for your favorite routes</p>
+                </div>
+                <div class="feature-card">
+                    <span class="icon">📊</span>
+                    <h3>Price History</h3>
+                    <p>View historical price trends to book at the right time</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <h3>Enter Your Route</h3>
+                    <p>Tell us where you want to go and when</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <h3>We Search Everything</h3>
+                    <p>Our system scans all major travel platforms</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <h3>Compare & Book</h3>
+                    <p>See all options side-by-side and book the best deal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Travel Saathi. Your trusted Indian travel companion.</p>
+            <div class="footer-links">
+                <a href="admin.html">Admin Portal</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
