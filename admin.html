@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Travel Saathi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>🧳 Travel Saathi Admin</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="#" class="btn-logout">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="admin-container">
+        <aside class="admin-sidebar">
+            <h3>Admin Menu</h3>
+            <ul class="admin-nav">
+                <li><a href="#" class="active" data-section="overview">📊 Overview</a></li>
+                <li><a href="#" data-section="users">👥 Users</a></li>
+                <li><a href="#" data-section="bookings">🎫 Bookings</a></li>
+                <li><a href="#" data-section="prices">💰 Price Alerts</a></li>
+                <li><a href="#" data-section="analytics">📈 Analytics</a></li>
+                <li><a href="#" data-section="settings">⚙️ Settings</a></li>
+            </ul>
+        </aside>
+
+        <main class="admin-content">
+            <section id="overview" class="admin-section active">
+                <h2>Dashboard Overview</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">👥</div>
+                        <div class="stat-info">
+                            <h3>Total Users</h3>
+                            <p class="stat-number">1,234</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🎫</div>
+                        <div class="stat-info">
+                            <h3>Total Bookings</h3>
+                            <p class="stat-number">5,678</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">💰</div>
+                        <div class="stat-info">
+                            <h3>Revenue</h3>
+                            <p class="stat-number">₹12.5L</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🔔</div>
+                        <div class="stat-info">
+                            <h3>Active Alerts</h3>
+                            <p class="stat-number">234</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recent-activity">
+                    <h3>Recent Activity</h3>
+                    <table class="activity-table">
+                        <thead>
+                            <tr>
+                                <th>User</th>
+                                <th>Action</th>
+                                <th>Route</th>
+                                <th>Amount</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>user@example.com</td>
+                                <td>Booking</td>
+                                <td>Delhi → Mumbai</td>
+                                <td>₹3,450</td>
+                                <td>2 mins ago</td>
+                            </tr>
+                            <tr>
+                                <td>traveler@example.com</td>
+                                <td>Price Alert</td>
+                                <td>Bangalore → Goa</td>
+                                <td>-</td>
+                                <td>15 mins ago</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="users" class="admin-section">
+                <h2>User Management</h2>
+                <p>Manage all registered users, view their activity, and handle support requests.</p>
+            </section>
+
+            <section id="bookings" class="admin-section">
+                <h2>Bookings Management</h2>
+                <p>View and manage all travel bookings made through the platform.</p>
+            </section>
+
+            <section id="prices" class="admin-section">
+                <h2>Price Alerts</h2>
+                <p>Monitor and manage price tracking alerts set by users.</p>
+            </section>
+
+            <section id="analytics" class="admin-section">
+                <h2>Analytics</h2>
+                <p>View detailed analytics and insights about platform usage.</p>
+            </section>
+
+            <section id="settings" class="admin-section">
+                <h2>Settings</h2>
+                <p>Configure platform settings, API keys, and system preferences.</p>
+            </section>
+        </main>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
