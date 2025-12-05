@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - TravelSaathi</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-plane-departure"></i>
+                <span>TravelSaathi</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="profile.html" class="active">Profile</a>
+                <button id="logoutBtn" class="logout-btn">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="profile-container">
+        <div class="profile-header">
+            <div class="profile-avatar">
+                <i class="fas fa-user-circle"></i>
+            </div>
+            <h1 id="profileName">User Profile</h1>
+            <p id="profileEmail" class="profile-email"></p>
+        </div>
+
+        <div class="profile-content">
+            <div class="profile-section">
+                <h2><i class="fas fa-user"></i> Personal Information</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <label>Full Name</label>
+                        <input type="text" id="fullName" class="form-input">
+                    </div>
+                    <div class="info-item">
+                        <label>Email</label>
+                        <input type="email" id="email" class="form-input" readonly>
+                    </div>
+                    <div class="info-item">
+                        <label>Phone</label>
+                        <input type="tel" id="phone" class="form-input">
+                    </div>
+                    <div class="info-item">
+                        <label>Location</label>
+                        <input type="text" id="location" class="form-input">
+                    </div>
+                </div>
+                <button id="saveProfileBtn" class="btn-primary">Save Changes</button>
+            </div>
+
+            <div class="profile-section">
+                <h2><i class="fas fa-bell"></i> Notification Preferences</h2>
+                <div class="preferences-list">
+                    <label class="preference-item">
+                        <input type="checkbox" id="emailNotif" checked>
+                        <span>Email Notifications</span>
+                    </label>
+                    <label class="preference-item">
+                        <input type="checkbox" id="priceAlerts" checked>
+                        <span>Price Drop Alerts</span>
+                    </label>
+                    <label class="preference-item">
+                        <input type="checkbox" id="travelDeals">
+                        <span>Travel Deals & Offers</span>
+                    </label>
+                    <label class="preference-item">
+                        <input type="checkbox" id="weeklyDigest">
+                        <span>Weekly Travel Digest</span>
+                    </label>
+                </div>
+                <button id="savePrefsBtn" class="btn-primary">Save Preferences</button>
+            </div>
+
+            <div class="profile-section">
+                <h2><i class="fas fa-history"></i> Recent Searches</h2>
+                <div id="recentSearches" class="recent-searches">
+                    <p class="no-data">No recent searches</p>
+                </div>
+                <button id="clearSearchesBtn" class="btn-secondary">Clear History</button>
+            </div>
+
+            <div class="profile-section danger-zone">
+                <h2><i class="fas fa-exclamation-triangle"></i> Account Settings</h2>
+                <button id="deleteAccountBtn" class="btn-danger">Delete Account</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 TravelSaathi. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="profile.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>
