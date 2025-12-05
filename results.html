@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - TravelSaathi</title>
+    <link rel="stylesheet" href="results.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-plane-departure"></i>
+                <span>TravelSaathi</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="#" id="profileLink">Profile</a>
+                <button id="logoutBtn" class="logout-btn">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="results-container">
+        <div class="search-summary">
+            <h1>Search Results</h1>
+            <div id="searchInfo"></div>
+        </div>
+
+        <div class="filters-section">
+            <div class="filter-group">
+                <label>Sort By:</label>
+                <select id="sortBy">
+                    <option value="price">Price (Low to High)</option>
+                    <option value="price-desc">Price (High to Low)</option>
+                    <option value="duration">Duration</option>
+                    <option value="departure">Departure Time</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label>Price Range:</label>
+                <input type="range" id="priceRange" min="0" max="50000" step="500">
+                <span id="priceValue">₹0 - ₹50,000</span>
+            </div>
+
+            <div class="filter-group">
+                <label>Provider:</label>
+                <div class="provider-filters">
+                    <label><input type="checkbox" value="makemytrip" checked> MakeMyTrip</label>
+                    <label><input type="checkbox" value="goibibo" checked> Goibibo</label>
+                    <label><input type="checkbox" value="irctc" checked> IRCTC</label>
+                    <label><input type="checkbox" value="redbus" checked> RedBus</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="results-grid" id="resultsGrid">
+            <!-- Results will be loaded dynamically -->
+            <div class="loading">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Loading results...</p>
+            </div>
+        </div>
+
+        <div class="no-results" id="noResults" style="display: none;">
+            <i class="fas fa-search"></i>
+            <h2>No results found</h2>
+            <p>Try adjusting your search criteria or filters</p>
+            <a href="index.html" class="btn-primary">New Search</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 TravelSaathi. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="results.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>
